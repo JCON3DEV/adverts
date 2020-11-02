@@ -16,6 +16,45 @@
   </head>
   <body>
     <h1>Bonjour</h1>
+    <section class="adverts">
+      <div class="row">
+        <!-- does this want a div for column sizing here? -->
+        <div class="col-md-6">
+          <div class="card-deck mx-auto"><!-- makes a set of equal width and height cards that aren’t attached to one another-->
+            <div class="card bg-light border-light mb-3">
+              <img src="resources/timetable.png" alt="">
+              <div class="card-body">
+                <!-- MAKE THIS DYNAMIC -->
+                <h5 class="card-title">Summer Learning</h5>
+                <h6 class="text-muted">Brittish Columbia</h6>
+                <p class="text-muted card-text">Summer is in full swing! Now is the perfect itme for studetns to leanr about BC's amazing agriculture and food story. We've compiled a fun 90 week learning schedule from June 29th to August 28 to help K-12 Students strengthen their agriculture and food knowledge before Fall arrives. Each week has a different theme adn allk resources are free to download!</p>
+                <div>
+                  <!-- button must be in a div to raise its z-index over the stretched link -->
+                  <button href="https://www.facebook.com/" class="read-more btn btn-info">Read more..</button>
+                </div>
+                <!-- below needs glyphcon  -->
+                <div class="footer text-capitalize"><a href="https://www.google.com/"  class="stretched-link"><strong>Visit website</strong></a></div> 
+  
+              </div>
+  
+            </div>
+  
+  
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
     <script src="index.js" async defer></script>
+
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
   </body>
 </html>
