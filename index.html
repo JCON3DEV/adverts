@@ -19,8 +19,8 @@
     <section class="adverts">
       <div class="row">
         <!-- does this want a div for column sizing here? -->
-        <div class="col-md-6">
-          <div class="card-deck mx-auto"><!-- makes a set of equal width and height cards that aren’t attached to one another-->
+        <div class="col">
+          <div class="card-deck mx-auto"> <!-- makes a set of equal width and height cards that aren’t attached to one another-->
             <div class="card bg-light border-light mb-3">
               <img src="resources/timetable.png" alt="">
               <div class="card-body">
@@ -28,12 +28,24 @@
                 <h5 class="card-title">Summer Learning</h5>
                 <h6 class="text-muted">Brittish Columbia</h6>
                 <p class="text-muted card-text">Summer is in full swing! Now is the perfect itme for studetns to leanr about BC's amazing agriculture and food story. We've compiled a fun 90 week learning schedule from June 29th to August 28 to help K-12 Students strengthen their agriculture and food knowledge before Fall arrives. Each week has a different theme adn allk resources are free to download!</p>
-                <!-- <div> -->
+                <!-- Below is the extra readme text from a popover -->
+                <div class="popover-block-container">
                   <!-- button must be in a div to raise its z-index over the stretched link -->
-                  <button href="https://www.facebook.com/" class="read-more btn btn-info">Read more..</button>
-                <!-- </div> -->
+                  <button tabindex="0" type="button" class="btn btn-info" data-toggle="popover" title="Popover title" data-popover-content="#overlay">Click to toggle popover</button>
+                    <!-- below is the content that displays onclick -->
+                    <div id="overlay" style="display: none;">
+                      <div class="popover-body">
+                        <button type="button" class="popover-close close">
+                          <i class="material-icons">close</i>
+                        </button>
+                        This should be dynamically rendered based on the card.
+                      </div>
+                    </div>
+                </div>
                 <!-- below needs glyphcon  -->
-                <div class="footer text-capitalize"><a href="https://www.google.com/"  class="stretched-link"><strong>Visit website</strong></a></div> 
+                <div class="footer text-capitalize">
+                  <a href="https://www.google.com/" ><strong>Visit website</strong></a>
+                </div> 
   
               </div>
   
@@ -43,7 +55,45 @@
           </div>
 
         </div>
-      </div>
+        <div class="col demo mx-auto">
+          <p>Click the Icon to see the popover</p>
+          <!-- button popover  -->
+          <div class="popover-block-container">
+            <button tabindex="0" type="button" class="popover-icon" data-popover-content="#unique-id" data-toggle="popover"
+              data-placement="right">
+              <i class="material-icons">info</i>
+            </button>
+            <div id="unique-id" style="display:none;">
+              <div class="popover-body">
+                <button type="button" class="popover-close close">
+                  <i class="material-icons">close</i>
+                </button>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis libero ipsum, imperdiet
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col demo mx-auto">column 3
+          <h1>Bootstrap 4 Popover with html content</h1>
+          <p>Click the Icon to see the popover</p>
+          <!-- button popover  -->
+          <div class="popover-block-container">
+            <button tabindex="0" type="button" class="popover-icon" data-popover-content="#unique-id" data-toggle="popover"
+              data-placement="right">
+              <i class="material-icons">info</i>
+            </button>
+            <div id="unique-id" style="display:none;">
+              <div class="popover-body">
+                <button type="button" class="popover-close close">
+                  <i class="material-icons">close</i>
+                </button>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis libero ipsum, imperdiet
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div> <!--End of Row -->
     </section>
 
 
